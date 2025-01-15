@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/****** Navbar ******/
+.nav-heading {
+  color: white;
+  background-color: rgb(34, 100, 185);
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navigators {
+  /* background-color: aquamarine; */
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navi-btn {
+  padding: 0 2rem;
+  height: 50%;
+  background-color: rgb(34, 100, 185);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  margin: 0 4rem;
+  cursor: pointer;
+}
+
+/****** AddNewPerson ******/
+.addNewPerson {
+  border: 1px solid black;
+  height: 75vh;
+  width: 92%;
+  position: relative;
+  margin: auto;
+}
+
+.page-title {
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  width: 20%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 94%;
+  margin: 0 3rem;
+}
+
+tr {
+  height: 35px;
+}
+
+thead {
+  background-color: rgb(34, 100, 185);
+  color: white;
+}
+
+td {
+  text-align: center;
+}
+
+form {
+  /* background-color: red; */
+  display: flex;
+  width: 94%;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+
+.form-container {
+  border: 1px solid grey;
+  background-color: rgb(34, 100, 185);
+  color: white;
+  margin: 0 3rem;
+  width: 94%;
+  height: 3rem;
+  margin-top: 8px;
+}
+
+form>input {
+  width: 100%;
+}
+
+.row-btn {
+  text-decoration: underline;
+  border: none;
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+}
+
+.add-btn {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  background-color: rgb(34, 100, 185);
+  color: white;
+  border: none;
+  width: 10%;
+  height: 8%;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/****** Retrieve Page ******/
+.Retrieve {
+  border: 1px solid black;
+  width: 92%;
+  height: 75vh;
+  margin: auto;
+}
+
+.find {
+  /* background-color: red; */
+  height: 8%;
+  width: 50%;
+}
+
+.find-form {
+  /* background-color: aqua; */
+  height: 100%;
+  display: flex;
+}
+
+.search-aadhar {
+  margin-right: 2%;
+  text-align: center;
+}
+
+.search-aadhar :focus {
+  outline: none;
+}
+
+.find-btn {
+  border: none;
+  width: 20%;
+  background-color: rgb(34, 100, 185);
+  color: white;
+  cursor: pointer;
+}
+
+.result {
+  /* background-color: blueviolet; */
+  width: 92%;
+  margin: 2% 3% 0 3%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Media for small mobile */
+@media screen and (width: 320px) {
+
+  .nav-heading {
+    width: 27rem;
+  }
+
+  .addNewPerson {
+    height: 100vh;
+    width: 25rem;
+    margin: 0 1rem;
+  }
+
+  .navigators {
+    height: 12vh;
+    width: 134%;
+    display: flex;
+    gap: .2rem;
+    justify-content: center;
+    flex-direction: column;
+    margin: .5rem 0 .5rem;
+  }
+
+  .page-title {
+    width: 60%;
+    height: 2rem;
+  }
+
+  table {
+    width: 100%;
+    margin: .1rem 0;
+    font-size: small;
+  }
+  .form-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem;
+    width: 100%;
+    height: 4rem;
+    margin-top: 5px;
+  }
+  form>input {
+    width: 100%;
+  }
+  .add-btn {
+    width: 15%;
+    height: 5%;
+  }
+  /****** Retrieve Page ******/
+.Retrieve {
+  width: 130%;
+  height: 85vh;
+  margin: 0 .4rem;
+}
+
+.find {
+  height: 6%;
+  width: 70%;
+}
+
+.find-form {
+  height: 100%;
+  display: flex;
+}
+
+.search-aadhar {
+  margin-right: 2%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.result {
+  width: 92%;
+  margin: 8% 3% 0 3%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+}
