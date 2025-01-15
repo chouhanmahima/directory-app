@@ -35,7 +35,7 @@ This React application is designed to manage and retrieve person information wit
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/chouhanmahima/directory-app
    cd <repository-folder>
    ```
 
@@ -53,7 +53,7 @@ This React application is designed to manage and retrieve person information wit
    yarn start
    ```
 
-4. Open your browser and navigate to `http://localhost:3000` to view the app.
+4. Open your browser and navigate to `https://directory-app-lyart.vercel.app/` to view the app.
 
 ---
 
