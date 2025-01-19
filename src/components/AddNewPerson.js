@@ -16,9 +16,11 @@ const AddNewPerson = () => {
   },[])
 
   // Delete all Information
-  const handleDelete = (aadhar)=> {
-    const allData = JSON(localStorage.getItem("user"));
-    const searchedResult = allData.filter( (item) => item.Aadhar_Number !== aadhar);
+  const handleDelete = (aadhar) => {
+    const allData = JSON.parse(localStorage.getItem("user"));
+    const searchedResult = allData.filter(
+       (item) => item.Aadhar_Number !== aadhar
+      );
     localStorage.setItem("user", JSON.stringify(searchedResult));
     setUserData(searchedResult);
   }
@@ -77,15 +79,14 @@ const AddNewPerson = () => {
           </tr>
         </thead>
         <tbody>
-          {
-
-            userData === null ? (
-              <tr>
-                <th colSpan="6">No Data</th>
-              </tr>
-            ) :
+        {userData === null ? (
+          <tr>
+            <th colSpan="6">No data</th>
+          </tr>
+        ) :
             (
               userData.map( (item)=> {
+                return (
                 <tr key={item.Aadhar_Number}>
                   <td>{item.Name}</td>
                   <td>{item.Date_of_birth}</td>
@@ -93,9 +94,10 @@ const AddNewPerson = () => {
                   <td>{item.Mobile_Number}</td>
                   <td>{item.Age}</td>
                   <td>
-                    <button onClick={()=> handleDelete(item.Aadhar_Number)}>Delete</button>
+                    <button className='row-btn' onClick={()=> handleDelete(item.Aadhar_Number)}>Delete</button>
                   </td>
                 </tr>
+                );
               })
             )
 
